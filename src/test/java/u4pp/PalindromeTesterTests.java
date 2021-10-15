@@ -35,7 +35,7 @@ class PalindromeTesterTests {
 
     @Test
     void isPalindrome_whenCalledWithAllLowerCaseLongPalindrome_returnsTrue() {
-        assertTrue(PalindromeTester.isPalindrome("aaaabbccddeeddeeddggaaddggddaaaeeeeppeeeeaaaddggddaaggddeeddeeddccbbaaaaaa"));
+        assertTrue(PalindromeTester.isPalindrome("aaaabbccddeeddeeddggaaddggddaaaeeeeppeeeeaaaddggddaaggddeeddeeddccbbaaaa"));
     }
 
     @Test
@@ -71,7 +71,7 @@ class PalindromeTesterTests {
                 Scanner sc = new Scanner(System.in);
                 PalindromeTester.execute(sc);
             });
-            assertEquals(timesExecuted, output.split(System.lineSeparator()).length);
+            assertEquals(timesExecuted, output.split("\n").length);
         });
     }
 }
